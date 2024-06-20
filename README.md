@@ -1,5 +1,7 @@
 # Sqlite Explorer
 
+![screenshot](./assets/screenshot.png)
+
 ## Setup
 
 Rename `.env.template` to `.env` and update the values.
