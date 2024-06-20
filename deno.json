@@ -10,6 +10,10 @@
         "@libsql/client": "npm:@libsql/client@0.6.2",
         "papaparse": "npm:papaparse@5.4.1"
     },
+    "tasks": {
+        "publish": "deno publish --allow-slow-types",
+        "dev": "deno serve --env --allow-net --allow-env ./main.ts"
+    },
     "publish": {
         "include": [
             "src/**/*"
