@@ -10,6 +10,7 @@ Rename `.env.template` to `.env` and update the values.
 
 - `deno task dev`: start development server
 - `deno task publish`: publish to jsr (ignore the warnings)
+  - [jsx is not supported on jsr](https://github.com/jsr-io/jsr/issues/24), but it works if you use the `/** @jsxImportSource hono/jsx` pragma on all jsx files
 
 ## Installation
 
