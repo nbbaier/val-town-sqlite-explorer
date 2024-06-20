@@ -16,8 +16,9 @@ Rename `.env.template` to `.env` and update the values.
 ### Val.town
 
 ```ts
-import { createApp } from "jsr:@pomdtr/val-town-sqlite-explorer@latest";
+import { createApp } from "jsr:@pomdtr/val-town-sqlite-explorer@0.0.3";
 
+// the `valtown` env variable will be used as a token
 const app = createApp();
 
 export default app.fetch;
@@ -26,9 +27,12 @@ export default app.fetch;
 ### Deno Deploy / Smallweb
 
 ```ts
-import { createApp } from "jsr:@pomdtr/val-town-sqlite-explorer@latest";
+import { createApp } from "jsr:@pomdtr/val-town-sqlite-explorer@0.0.3";
 
-const app = createApp();
+const app = createApp({
+    // the token is required for the app to work
+    token: Deno.env.get("VALTOWN_TOKEN"),
+});
 
 export default app;
 ```
