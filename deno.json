@@ -1,0 +1,18 @@
+{
+    "name": "@pomdtr/val-town-sqlite-explorer",
+    "version": "0.0.3",
+    "exports": {
+        ".": "./src/mod.tsx"
+    },
+    "imports": {
+        "hono": "jsr:@hono/hono@4.4.7",
+        "zod": "npm:zod@3.23.8",
+        "@libsql/client": "npm:@libsql/client@0.6.2",
+        "papaparse": "npm:papaparse@5.4.1"
+    },
+    "publish": {
+        "include": [
+            "src/**/*"
+        ]
+    }
+}
