@@ -1,5 +1,5 @@
 {
-    "name": "@pomdtr/val-town-sqlite-explorer",
+    "name": "@nbbaier/val-town-sqlite-explorer",
     "version": "0.0.4",
     "exports": {
         ".": "./src/mod.tsx"
